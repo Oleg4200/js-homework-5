@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		let num=prompt("введіть число");
+
+		if ((num%2==0)&&(num!=2)) document.write("складене число");
+		else if (num==2)  document.write("Просте число");
+		else{ 
+   			 let k=Math.round(Math.sqrt(num));
+    		 let flag = false;
+             
+    	for(i=2; i<k+1; i++)
+        if(num%i==0){
+          	document.write("cкладене число");
+          	flag = true;
+          	break;
+         }
+            
+     	if (flag == false) document.write("просте число");
+		}
+	</script>
+
+</body>
+</html>

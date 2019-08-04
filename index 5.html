@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		let quantity_tr = prompt("Введіть кількість tr", "3")
+		let quantity_td = prompt("Введіть кількість td", "4")
+		let td_width = prompt("Введіть ширину td", "20%")
+		let td_height = prompt("Введіть висоту td", "30px")
+		let border_width = prompt("ведіть ширину границь", "2px")
+		let border_style = prompt("Введіть стиль границь", "solid")
+		let border_color = prompt("Введіть коліг границь", "red")
+		let text = prompt("Введіть текст", "eeeeeeee")
+		let color_text = prompt("ведіть колір тексту", "black")
+		let background_color = prompt("Введіть колір заднього фону", "yellow")
+
+		document.write(`<table style="border:${border_width} ${border_style} ${border_color}">`)
+		for(i=1; i<=quantity_tr; i++){
+			document.write(`<tr>`)
+            
+            for(i=1; i<=quantity_td; i++){
+			document.write(`<td style="width:${td_width}; height:${td_height}; color:${color_text}; background-color:${background_color};border:${border_width} ${border_style} ${border_color}">${text}</td>`)
+                
+		}
+          document.write(`</tr>`) 
+		}
+		document.write(`</table>`)
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
